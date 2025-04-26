@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    min-height: 100vh;
+}
+.youtube-icon {
+    color: #ff0000;
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #0f0f0f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #303030;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #303030;
+    background: #121212;
+    color: white;
+    font-size: 16px;
+}
+
+.search-btn {
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #303030;
+    border-left: none;
+    cursor: pointer;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background-color: #303030;
+    margin: 15px 0;
+}
+
+.sidebar {
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 240px;
+    background: #0f0f0f;
+    padding: 15px;
+    color: white;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.fa-fire { color: #ff4e45; }
+.fa-music { color: #ff00aa; }
+.fa-gamepad { color: #5c9eff; }
+.fa-newspaper { color: #00b8d9; }
+.fa-trophy { color: #ffbb00; }
+.fa-lightbulb { color: #00c853; }
+.fa-tshirt { color: #ff6d00; }
+.sidebar-item:hover {
+    background: #272727;
+}
+
+.sidebar-item i {
+    width: 24px;
+    text-align: center;
+}
+
+.content {
+    margin-left: 240px;
+    margin-top: 60px;
+    padding: 20px;
+    background: #0f0f0f;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    min-height: calc(100vh - 60px);
+}
+
+.video-card {
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.video-details {
+    padding: 12px 5px;
+    display: flex;
+    gap: 12px;
+}
+
+.channel-icon1 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/Screenshot\ 2025-03-26\ 193246.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon2 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/Screenshot\ 2025-03-26\ 194109.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon3 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/Screenshot\ 2025-03-26\ 194109.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon4 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/Screenshot\ 2025-03-26\ 193246.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon5 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/esisa.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon6 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/esisa.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon7 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/esisa.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon8 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/esisa.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.channel-icon9 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url(./image/esisa.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.video-info {
+    color: #aaa;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.thumbnail9 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/mk2.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.thumbnail9:hover {
+    background-image: url(./image/mqdefault_6s.webp);
+    background-position: center;
+    background-size: cover;
+}
+.thumbnail8 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/mk6.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.thumbnail8:hover {
+    background-image: url(./image/mqdefault_6s\ \(1\).webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.thumbnail7 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/mk5.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+.thumbnail7:hover {
+    background-image: url(./image/mqdefault_6s\ \(2\).webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.thumbnail6 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/mk4.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+.thumbnail6:hover {
+    background-image: url(./image/mqdefault_6s\ \(3\).webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.thumbnail5 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/mk3.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.thumbnail5:hover {
+    background-image: url(./image/mqdefault_6s\ \(4\).webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.thumbnail4 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/oth1.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.thumbnail4:hover {
+    background-image: url( ./image/mqdefault_6s\ \(5\).webp);
+    background-position: center;
+    background-size: cover;
+   
+}
+.thumbnail3 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/tm1.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.thumbnail3:hover {
+    background-image: url(./image/mqdefault_6s\ \(8\).webp);
+    background-position: center;
+    background-size: cover;
+}
+    
+.thumbnail2 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/tm2.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.thumbnail2:hover {
+    background-image: url(./image/mqdefault_6s\ \(7\).webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.thumbnail1 {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(./image/oth2.png);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.thumbnail1:hover {
+    background-image: url(./image/mqdefault_6s\ \(6\).webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
